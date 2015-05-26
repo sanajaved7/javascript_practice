@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+  <head>
+    <link href="peekstyle.css" type="text/css" rel="stylesheet"/>
+    <title>JavaScript Challenges</title>
+  </head>
+  <body id="docBody">
+    <form action="">
+      <fieldset>
+
+        <legend>Email subscriptions</legend>
+
+        <p id="Ross">
+          <label>
+            <input type="checkbox" name="subscribe" id="subscribe" onclick="toggleEmail()">
+            Yes! I would like to receive all of your free candy!
+          </label>
+        </p>
+
+        <p id="emailpara" onclick="toggleEmail()">
+          <label>
+            Email Address:
+            <input type="text" name="email" id="email">
+          </label>
+        </p>
+
+        <legend>Billing Information</legend>
+
+        <p>
+          <label>
+            Postal Address:<br>
+          <textarea name="postaladdress" id="postaladdress"></textarea>
+          </label>
+        </p>
+
+        <p>
+          Home Address:<br>
+          <label>
+             <input type="checkbox" name="homepostalcheck" id="homepostalcheck" onclick="setHomeAddress()">
+             Same as above
+          </label>
+          <br>
+          <textarea name="homeaddress" id="homeaddress"></textarea>
+        </p>
+      </fieldset>
+    </form>
+
+<script src="peek.js"></script>
+
+  </body>
+</html>
