@@ -13,6 +13,7 @@ function addPassenger (name, list) {
             }
             else if (i == list.length -1) {
                 list.push(name);
+                return list;
             }
         }
     }
